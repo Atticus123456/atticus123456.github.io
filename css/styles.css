@@ -1,4 +1,4 @@
-/* basic styles*/
+/* basic styles */
 html {
   font-size: 100%;
   line-height: 1.5rem;
@@ -25,8 +25,7 @@ img {
   height: auto;
   display: block;
 }
-
-/* End basic styles */
+/* End basic Styles */
 
 /* Begin Hero Styles */
 .hero-box {
@@ -49,10 +48,20 @@ img {
   grid-row: 1 / -1;
 }
 
+.hero-image-box::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(233, 121, 121, 0.342);
+}
+
 .hero-image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: fill;
 }
 
 .hero-text-box {
@@ -62,4 +71,42 @@ img {
   padding: 1rem;
   z-index: 10;
   text-align: center;
+}
+
+.hero-heading {
+  font-size: 2rem;
+  line-height: 3rem;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.hero-text {
+  font-size: 2rem;
+  color: white;
+}
+
+/* Media Queries Below */
+
+@media (min-width: 600px) {
+  .hero-heading {
+    color: pink;
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+  .hero-text {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media (min-width: 920px) {
+  .hero-heading {
+    font-size: 9rem;
+    line-height: 9rem;
+  }
+  .hero-text {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
 }
