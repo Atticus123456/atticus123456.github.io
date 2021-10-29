@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/glightbox.css" />
   </head>
   <body>
     <header class="hero-box">
@@ -18,41 +19,60 @@
       </section>
     </header>
     <!-- Begin Portfolio Gallery-->
-    <section class="portfolio-gallery">
+    <section class="portfolio-container">
       <h1>Portfolio</h1>
-      <div class="gallery-item">
-        <a class="glightbox" href="img/Phoebe Bridgers.jpg">
-          <img
-            class="gallery-img"
-            src="img/Phoebe Bridgers.jpg"
-            alt="Phoebe Bridgers"
-        /></a>
-      </div>
-      <div class="gallery-item">
-        <a class="glightbox" href="img/PillowJump.GIF">
-          <img class="gallery-img" src="img/PillowJump.GIF" alt="PillowJump"
-        /></a>
-      </div>
-      <div class="gallery-item">
-        <a class="glightbox" href="img/Tennessee.JPG">
-          <img class="gallery-img" src="img/Tennessee.JPG" alt="Tennessee"
-        /></a>
-      </div>
-      <div class="gallery-item">
-        <a class="glightbox" href="img/Leslie.JPG">
-          <img class="gallery-img" src="img/Leslie.JPG" alt="Leslie"
-        /></a>
-      </div>
-      <div class="gallery-item">
-        <a class="glightbox" href="img/Jessie.jpg">
-          <img class="gallery-img" src="img/Jessie.jpg" alt="Jessie"
-        /></a>
-      </div>
-      <div class="gallery-item">
-        <a class="glightbox" href="img/Charlie.JPG">
-          <img class="gallery-img" src="img/Charlie.JPG" alt="Charlie"
-        /></a>
-      </div>
+      <section class="portfolio-gallery">
+        <div class="gallery-item">
+          <a
+            class="glightbox"
+            href="img/Phoebe Bridgers.jpg"
+            data-glightbox="title: Phoebe Bridgers; description: phoebe
+          bridgers"
+          >
+            <img
+              class="gallery-img"
+              src="img/Phoebe Bridgers.jpg"
+              alt="Phoebe Bridgers"
+          /></a>
+        </div>
+        <div class="gallery-item">
+          <a
+            class="glightbox"
+            href="img/PillowJump.GIF"
+            data-glightbox="title: Pillow Jump; description: Pillow Jump"
+          >
+            <img class="gallery-img" src="img/PillowJump.GIF" alt="PillowJump"
+          /></a>
+        </div>
+        <div class="gallery-item">
+          <a
+            class="glightbox"
+            href="img/Tennessee.JPG"
+            data-glightbox="title: Tennessee; description: Tennessee"
+          >
+            <img class="gallery-img" src="img/Tennessee.JPG" alt="Tennessee"
+          /></a>
+        </div>
+        <div class="gallery-item">
+          <a class="glightbox" href="img/Leslie.JPG">
+            <img class="gallery-img" src="img/Leslie.JPG" alt="Leslie"
+          /></a>
+        </div>
+        <div class="gallery-item">
+          <a class="glightbox" href="img/Jessie.jpg">
+            <img class="gallery-img" src="img/Jessie.jpg" alt="Jessie"
+          /></a>
+        </div>
+        <div class="gallery-item">
+          <a class="glightbox" href="img/Charlie.JPG">
+            <img class="gallery-img" src="img/Charlie.JPG" alt="Charlie"
+          /></a>
+        </div>
+      </section>
     </section>
+    <script src="js/glightbox.min.js"></script>
+    <script type="text/javascript">
+      const lightbox = GLightbox({ loop: true });
+    </script>
   </body>
 </html>
