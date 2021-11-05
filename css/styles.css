@@ -156,6 +156,10 @@ img {
 .about-social a {
   color: black;
   padding: 0 1rem 1rem 1rem;
+  font-size: 2rem;
+}
+.about-social a:hover {
+  color: salmon;
 }
 .about-image-img {
   height: 100%;
@@ -170,6 +174,7 @@ img {
     font-size: 4rem;
     line-height: 4rem;
   }
+
   .hero-text {
     font-size: 2.5rem;
     line-height: 2.5rem;
